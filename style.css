@@ -38,11 +38,19 @@
     display: none;
 }
 
+/* CONTENT */
 .content {
     width: calc(100% - 50px);
     overflow-y: auto;
     background-color: brown;
     height: 100%;
+}
+/* TABLE */
+
+td button {
+
+    display: inline;
+    
 }
 
 nav {
@@ -74,6 +82,7 @@ nav {
     margin: 0 auto;
     display: block;
 }
+
 
 
 @media screen and (min-width: 576px){
