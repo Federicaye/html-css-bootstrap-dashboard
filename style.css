@@ -1,3 +1,19 @@
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+  }
+
+  :root {
+	--color-sidebar: #0f263c;
+	--color-blue: #1b72e8;
+	--color-header: #f8f9fa;
+}
+
+
 .wrapper {
     height: 100vh;
     padding-top: 40px;
@@ -6,7 +22,7 @@
 /* SIDEBAR */
 .fg-sidebar {
     width: 50px;
-    background-color: blueviolet;
+    background-color: var(--color-sidebar);
 }
 
 .sidebar-1 {
@@ -42,8 +58,16 @@
 .content {
     width: calc(100% - 50px);
     overflow-y: auto;
-    background-color: brown;
+    background-color: var(--color-header);
     height: 100%;
+}
+
+#blue {
+    background-color: var(--color-blue);
+}
+
+#blue .custom-badge {
+    background-color: #0f263c;
 }
 /* TABLE */
 
@@ -58,7 +82,7 @@ nav {
     top: 0;
     height: 40px;
     width: 100%;
-    background-color: rgb(110, 109, 108);
+    background-color: var(--color-header);
 }
 
 .nav-lateral {
@@ -101,7 +125,7 @@ nav {
 
     .fg-sidebar {
         width: 150px;
-        background-color: blueviolet;
+        background-color: var(--color-sidebar);
     }
 
     .sidebar-1 {
@@ -118,7 +142,7 @@ nav {
     .content {
         width: calc(100% - 150px);
         overflow-y: auto;
-        background-color: brown;
+        background-color: var(--color-header);
         height: 100%;
     }
 
@@ -133,4 +157,4 @@ nav {
     }
 
    
-}
+};
