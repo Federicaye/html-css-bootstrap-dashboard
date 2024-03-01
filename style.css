@@ -5,7 +5,7 @@
 
 /* SIDEBAR */
 .fg-sidebar {
-    width: 200px;
+    width: 50px;
     background-color: blueviolet;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .content {
-    width: calc(100% - 200px);
+    width: calc(100% - 50px);
     overflow-y: auto;
     background-color: brown;
     height: 100%;
@@ -32,23 +32,6 @@ nav {
     background-color: rgb(110, 109, 108);
 }
 
-#logo {
-    display: none;
-}
-
-#logo-mobile {
-    width: 100%;
-    overflow: hidden;
-    max-width: 20px;
-    margin: 0 auto;
-}
-
-ul {
-    list-style-type: none;
-    padding-inline-start: 0px;
-    padding-left: 0;
-}
-
 .nav-lateral {
     width: 10%;
     background-color: white;
@@ -59,11 +42,64 @@ ul {
     padding-right: 5px;
 }
 
+#logo {
+    display: none;
+}
+
+#logo-mobile {
+    width: 100%;
+    overflow: hidden;
+    max-width: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    padding-left: 0;
+}
+
+
+
 @media screen and (min-width: 768px) {
     #logo {
         display: block;
     }
+
     #logo-mobile {
         display: none;
+    }
+
+    .fg-sidebar {
+        width: 200px;
+        background-color: blueviolet;
+    }
+
+    .sidebar-1 {
+        height: calc(100% - 50px);
+    }
+
+    .sidebar-2 {
+        height: 50px;
+    }
+
+    .content {
+        width: calc(100% - 200px);
+        overflow-y: auto;
+        background-color: brown;
+        height: 100%;
+    }
+
+    .nav-lateral {
+        width: 10%;
+        background-color: white;
+        min-width: 70px;
+    }
+    
+    .nav-lateral i {
+        padding-right: 5px;
     }
 }
